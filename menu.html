@@ -22,8 +22,7 @@
                     <a href="index.html" class="hover:text-amber-600 transition-colors">Beranda</a>
                     <a href="index.html#unggulan" class="hover:text-amber-600 transition-colors">Keunggulan</a>
                     <a href="index.html#menu" class="hover:text-amber-600 transition-colors">Menu Populer</a>
-                    <!--  <a href="menu.html" class="text-amber-600 border-b-2 border-amber-500 pb-1 font-bold">Menu Lengkap</a> -->
-                    <a href="menu.html" class="hover:text-amber-600 transition-colors">Menu Lengkap</a>
+                    <a href="menu.html" class="text-amber-600 border-b-2 border-amber-500 pb-1 font-bold">Menu Lengkap</a>
                     <a href="index.html#testimoni" class="hover:text-amber-600 transition-colors">Testimoni</a>
                 </div>
                 <div>
@@ -41,6 +40,21 @@
                 <p class="text-slate-500">Jelajahi semua varian menu lezat kami yang dimasak fresh setiap saat.</p>
             </div>
 
+            <div class="flex justify-center space-x-6 sm:space-x-10 border-b border-slate-200 max-w-2xl mx-auto pt-4">
+    <button onclick="filterKategori('semua', this)" class="btn-filter border-b-2 border-amber-500 pb-3 text-amber-600 font-bold text-sm sm:text-base cursor-pointer transition-all duration-200">
+        ✨ Semua
+    </button>
+    <button onclick="filterKategori('makanan_berat', this)" class="btn-filter border-b-2 border-transparent pb-3 text-slate-500 hover:text-slate-800 font-medium text-sm sm:text-base cursor-pointer transition-all duration-200">
+        🍛 Makanan Berat
+    </button>
+    <button onclick="filterKategori('makanan_ringan', this)" class="btn-filter border-b-2 border-transparent pb-3 text-slate-500 hover:text-slate-800 font-medium text-sm sm:text-base cursor-pointer transition-all duration-200">
+        🥟 Makanan Ringan
+    </button>
+    <button onclick="filterKategori('minuman', this)" class="btn-filter border-b-2 border-transparent pb-3 text-slate-500 hover:text-slate-800 font-medium text-sm sm:text-base cursor-pointer transition-all duration-200">
+        🍹 Minuman
+    </button>
+</div>
+
             <div id="grid-menu-utama" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 </div>
         </div>
@@ -52,10 +66,26 @@
 
     <script src="menu-data.js"></script>
     <script>
-        // Menjalankan fungsi render menu saat file menu.html ini dibuka
+        // Menjalankan fungsi render awal untuk memunculkan semua menu saat halaman dibuka
         document.addEventListener("DOMContentLoaded", () => {
-            renderAllMenu('grid-menu-utama');
+            renderAllMenu('grid-menu-utama', 'semua');
         });
+
+        // Fungsi kontrol untuk tombol aktif dan memicu penyaringan data
+        function filterKategori(kategori, tombolAktif) {
+    renderAllMenu('grid-menu-utama', kategori);
+
+    const seluruhTombol = document.querySelectorAll('.btn-filter');
+    seluruhTombol.forEach(btn => {
+        // Reset ke posisi pasif (tanpa garis bawah)
+        btn.classList.remove('border-amber-500', 'text-amber-600', 'font-bold');
+        btn.classList.add('border-transparent', 'text-slate-500', 'font-medium');
+    });
+
+    // Set ke posisi aktif
+    tombolAktif.classList.remove('border-transparent', 'text-slate-500', 'font-medium');
+    tombolAktif.classList.add('border-amber-500', 'text-amber-600', 'font-bold');
+}
     </script>
 </body>
 </html>

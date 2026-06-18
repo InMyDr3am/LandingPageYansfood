@@ -1,9 +1,10 @@
-// Data seluruh menu YansFood
+// Data seluruh menu YansFood dengan tambahan properti kategori
 const masterMenu = [
     {
         id: "m1",
         nama: "Nasi Goreng",
         harga: "Rp 16.000",
+        kategori: "makanan_berat",
         image: "images/makanan_berat/nasi_goreng.png",
         deskripsi: "Nasi goreng dengan rasa khas rumahan dilengkapi dengan telur, sayur dan kerupuk."
     },
@@ -11,6 +12,7 @@ const masterMenu = [
         id: "m2",
         nama: "Nasi Goreng Cikur",
         harga: "Rp 16.000",
+        kategori: "makanan_berat",
         image: "images/makanan_berat/nasi_goreng_cikur.png",
         deskripsi: "Nasi goreng dengan rasa cikur yang dominan dan dilengkapi dengan telur, sayur dan kerupuk."
     },
@@ -18,6 +20,7 @@ const masterMenu = [
         id: "m3",
         nama: "Nasi Goreng Jadul",
         harga: "Rp 16.000",
+        kategori: "makanan_berat",
         image: "images/makanan_berat/nasi_goreng_jadul.png",
         deskripsi: "Nasi goreng dengan rasa bawang merah dan putih yang dominan."
     },
@@ -25,6 +28,7 @@ const masterMenu = [
         id: "m4",
         nama: "Kwetiau Goreng Spesial",
         harga: "Rp 18.000",
+        kategori: "makanan_berat",
         image: "images/makanan_berat/kwetiau.png",
         deskripsi: "Kwetiau kenyal yang ditumis dengan bumbu pilihan, telur, bakso, dan sayuran segar."
     },
@@ -32,6 +36,7 @@ const masterMenu = [
         id: "m5",
         nama: "Mie Goreng Kampung",
         harga: "Rp 17.000",
+        kategori: "makanan_berat",
         image: "images/makanan_berat/mie_goreng.png", 
         deskripsi: "Mie telur pilihan yang dibumbui dengan kecap manis premium, ebi, dan sayuran."
     },
@@ -39,8 +44,17 @@ const masterMenu = [
         id: "m6",
         nama: "Dimsum Ayam Jamur (Isi 4)",
         harga: "Rp 15.000",
+        kategori: "makanan_ringan",
         image: "images/dimsum_jamur.jpeg",
         deskripsi: "Dimsum kukus homemade dengan isian daging ayam padat berpadu gurihnya jamur."
+    },
+    {
+        id: "m7",
+        nama: "Es Teh Manis",
+        harga: "Rp 5.000",
+        kategori: "minuman",
+        image: "images/minuman/es_teh.png",
+        deskripsi: "Es teh manis segar pelepas dahaga yang dibuat dari daun teh pilihan."
     }
 ];
 
@@ -58,12 +72,23 @@ function toggleDescription(elementId, button) {
     }
 }
 
-// Fungsi untuk merender HTML Kartu Menu ke dalam Grid
-function renderAllMenu(containerId) {
+// Fungsi untuk merender HTML Kartu Menu ke dalam Grid (Mendukung Filter Kategori)
+function renderAllMenu(containerId, kategoriDipilih = 'semua') {
     const gridContainer = document.getElementById(containerId);
     if (!gridContainer) return;
 
-    gridContainer.innerHTML = masterMenu.map(menu => `
+    // Saring menu berdasarkan kategori yang dipilih
+    const menuTerfilter = kategoriDipilih === 'semua' 
+        ? masterMenu 
+        : masterMenu.filter(menu => menu.kategori === kategoriDipilih);
+
+    // Tampilkan pesan jika menu di kategori tersebut kosong
+    if (menuTerfilter.length === 0) {
+        gridContainer.innerHTML = `<p class="col-span-full text-center text-slate-500 py-12">Menu belum tersedia untuk kategori ini.</p>`;
+        return;
+    }
+
+    gridContainer.innerHTML = menuTerfilter.map(menu => `
         <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all">
             <img src="${menu.image}" alt="${menu.nama}" class="w-full h-48 object-cover" onerror="this.src='https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=500&q=80'">
             <div class="p-6 space-y-4">
