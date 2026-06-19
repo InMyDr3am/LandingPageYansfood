@@ -122,7 +122,7 @@ const masterMenu = [
     },
     {
         id: "m16",
-        nama: "Kentang Goreng",
+        nama: "Kentang Goreng (200gram)",
         harga: "Rp 10.000",
         kategori: "makanan_ringan",
         image: "images/makanan_ringan/kentang.png",
@@ -130,7 +130,7 @@ const masterMenu = [
     },
     {
         id: "m17",
-        nama: "Sosis Goreng",
+        nama: "Sosis Goreng (Isi 2)",
         harga: "Rp 10.000",
         kategori: "makanan_ringan",
         image: "images/makanan_ringan/sosis.png",
@@ -144,14 +144,101 @@ const masterMenu = [
         image: "images/makanan_ringan/sosis_kentang.png",
         deskripsi: "Kentang goreng dan sosis yang dibuat dadakan. Free saus, chili oil dan mayones."
     },
-   
     {
-        id: "m11",
+        id: "m19",
+        nama: "Ketan Goreng (Isi 5)",
+        harga: "Rp 10.000",
+        kategori: "makanan_ringan",
+        image: "images/makanan_ringan/ketan.png",
+        deskripsi: "Ketan goreng dadakan isi 5 pcs. Free saus."
+    },
+    {
+        id: "m20",
+        nama: "Kroket Bihun (Isi 5)",
+        harga: "Rp 10.000",
+        kategori: "makanan_ringan",
+        image: "images/makanan_ringan/kroket_bihun.png",
+        deskripsi: "Kroket homemade dengan isian bihun dan sayur yang digoreng dadakan. Free saus dan mayones."
+    },
+    {
+        id: "m21",
+        nama: "Pisang Cokelat Lumer (Isi 5)",
+        harga: "Rp 12.000",
+        kategori: "makanan_ringan",
+        image: "images/makanan_ringan/pisang_coklat.png",
+        deskripsi: "Pisang cokelat homemade isian pisang dan cokelat lumer nikmat. isi 5 pcs."
+    },
+    {
+        id: "m22",
+        nama: "Chicken Nugget (Isi 3)",
+        harga: "Rp 10.000",
+        kategori: "makanan_ringan",
+        image: "images/makanan_ringan/nugget.png",
+        deskripsi: "Chicken nugget homemade yang digoreng dadakan. Free saus dan mayones."
+    },
+    {
+        id: "m23",
+        nama: "Stick Sosis (Isi 5)",
+        harga: "Rp 10.000",
+        kategori: "makanan_ringan",
+        image: "images/makanan_ringan/stick_sosis.png",
+        deskripsi: "Stick sosis homemade yang digoreng dadakan. Free saus dan mayones.."
+    },
+    {
+        id: "m24",
+        nama: "Stick Mozarela (Isi 4)",
+        harga: "Rp 15.000",
+        kategori: "makanan_ringan",
+        image: "images/makanan_ringan/stick_moza.png",
+        deskripsi: "Stick Mozarela homemade yang digoreng dadakan. Free saus dan mayones."
+    },
+    {
+        id: "m25",
         nama: "Es Teh Manis",
+        harga: "Rp 8.000",
+        kategori: "minuman",
+        image: "images/minuman/es_teh_manis.png",
+        deskripsi: "Es teh manis segar pelepas dahaga yang dibuat dari daun teh pilihan."
+    },
+    {
+        id: "m26",
+        nama: "Susu Jahe",
+        harga: "Rp 8.000",
+        kategori: "minuman",
+        image: "images/minuman/susu_jahe.png",
+        deskripsi: "Susu jahe hangat yang cocok untuk menghangatkan badan."
+    },
+    {
+        id: "m27",
+        nama: "Susu Milo",
+        harga: "Rp 12.000",
+        kategori: "minuman",
+        image: "images/minuman/susu_milo.png",
+        deskripsi: "Susu milo bisa dingin bisa panas sesuai request."
+    },
+    {
+        id: "m28",
+        nama: "Es Kopi",
+        harga: "Rp 12.000",
+        kategori: "minuman",
+        image: "images/minuman/es_kopi.png",
+        deskripsi: "Es kopi segar pelepas dahaga yang dibuat dari kopi pilihan."
+    },
+    {
+        id: "m29",
+        nama: "Kukubima Dingin",
         harga: "Rp 5.000",
         kategori: "minuman",
-        image: "images/minuman/es_teh.png",
-        deskripsi: "Es teh manis segar pelepas dahaga yang dibuat dari daun teh pilihan."
+        image: "images/minuman/kukubima.png",
+        deskripsi: "Kukubima dingin jos gandos."
+    },
+    {
+        id: "m30",
+        nama: "Extra Joss Dingin",
+        harga: "Rp 5.000",
+        kategori: "minuman",
+        image: "images/minuman/extra_joss.png",
+        deskripsi: "Extra joss dingin jos gandos."
     }
 ];
 
