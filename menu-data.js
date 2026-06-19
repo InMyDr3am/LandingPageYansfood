@@ -288,7 +288,7 @@ function renderAllMenu(containerId, kategoriDipilih = 'semua') {
                         ...selengkapnya
                     </button>
                 </div>
-                <a href="https://wa.me/6281234567890?text=Saya%20mau%20pesan%20${encodeURIComponent(menu.nama)}" target="_blank" class="block text-center w-full bg-slate-50 hover:bg-amber-600 hover:text-white text-slate-700 text-xs font-bold py-3 rounded-xl transition-all">
+                <a href="https://wa.me/62812221222936?text=Saya%20mau%20pesan%20${encodeURIComponent(menu.nama)}" target="_blank" class="block text-center w-full bg-slate-50 hover:bg-amber-600 hover:text-white text-slate-700 text-xs font-bold py-3 rounded-xl transition-all">
                     Pesan via WhatsApp
                 </a>
             </div>
