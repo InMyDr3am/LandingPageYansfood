@@ -2,6 +2,38 @@
 const masterMenu = [
     {
         id: "m1",
+        nama: "Nasi Chicken Katsu",
+        harga: "Rp 20.000",
+        kategori: "makanan_berat",
+        image: "images/makanan_berat/nasi_chicken_katsu.png",
+        deskripsi: "Nasi dan chicken katsu homemade yang dibuat tanpa pengawet. Dilengkapi sayur, saus dan mayones."
+    },
+    {
+        id: "m2",
+        nama: "Nasi Chicken Nugget",
+        harga: "Rp 17.000",
+        kategori: "makanan_berat",
+        image: "images/makanan_berat/nasi_nugget.png",
+        deskripsi: "Nasi dan 4 pcs chicken nugget yang dibuat tanpa pengawet. Dilengkapi sayur, saus dan mayones."
+    },
+    {
+        id: "m3",
+        nama: "Nasi Stick Sosis",
+        harga: "Rp 17.000",
+        kategori: "makanan_berat",
+        image: "images/makanan_berat/nasi_stick_sosis.png",
+        deskripsi: "Nasi dan 8 pcs stick sosis homemade yang dibuat tanpa pengawet. Dilengkapi sayur, saus dan mayones."
+    },
+    {
+        id: "m4",
+        nama: "Nasi Nugget Stick Sosis",
+        harga: "Rp 19.000",
+        kategori: "makanan_berat",
+        image: "images/makanan_berat/nasi_nugget_stick_sosis.png",
+        deskripsi: "Nasi, 4 pcs nugget dan 2 pcs stick sosis homemade yang dibuat tanpa pengawet. Dilengkapi sayur, saus dan mayones."
+    },
+    {
+        id: "m5",
         nama: "Nasi Goreng",
         harga: "Rp 16.000",
         kategori: "makanan_berat",
@@ -9,7 +41,7 @@ const masterMenu = [
         deskripsi: "Nasi goreng dengan rasa khas rumahan dilengkapi dengan telur, sayur dan kerupuk."
     },
     {
-        id: "m2",
+        id: "m6",
         nama: "Nasi Goreng Cikur",
         harga: "Rp 16.000",
         kategori: "makanan_berat",
@@ -17,39 +49,95 @@ const masterMenu = [
         deskripsi: "Nasi goreng dengan rasa cikur yang dominan dan dilengkapi dengan telur, sayur dan kerupuk."
     },
     {
-        id: "m3",
+        id: "m7",
         nama: "Nasi Goreng Jadul",
         harga: "Rp 16.000",
         kategori: "makanan_berat",
         image: "images/makanan_berat/nasi_goreng_jadul.png",
-        deskripsi: "Nasi goreng dengan rasa bawang merah dan putih yang dominan."
+        deskripsi: "Nasi goreng dengan rasa bawang merah dan putih yang dominan dan dilengkapi dengan telur, sayur dan kerupuk."
     },
     {
-        id: "m4",
-        nama: "Kwetiau Goreng Spesial",
+        id: "m8",
+        nama: "Nasi Goreng Chicken Katsu",
+        harga: "Rp 23.000",
+        kategori: "makanan_berat",
+        image: "images/makanan_berat/nasi_goreng_katsu.png",
+        deskripsi: "Nasi goreng dengan rasa khas rumahan dilengkapi dengan telur, chicken katsu sayur dan kerupuk."
+    },
+    {
+        id: "m9",
+        nama: "Nasi Goreng Mawut",
         harga: "Rp 18.000",
         kategori: "makanan_berat",
-        image: "images/makanan_berat/kwetiau.png",
-        deskripsi: "Kwetiau kenyal yang ditumis dengan bumbu pilihan, telur, bakso, dan sayuran segar."
+        image: "images/makanan_berat/nasi_goreng_mawut.png", 
+        deskripsi: "Nasi goreng dengan rasa khas rumahan dilengkapi dengan mie, telur, sayur dan kerupuk."
     },
     {
-        id: "m5",
-        nama: "Mie Goreng Kampung",
-        harga: "Rp 17.000",
-        kategori: "makanan_berat",
-        image: "images/makanan_berat/mie_goreng.png", 
-        deskripsi: "Mie telur pilihan yang dibumbui dengan kecap manis premium, ebi, dan sayuran."
+        id: "m10",
+        nama: "Dimsum Ayam (Isi 4)",
+        harga: "Rp 15.000",
+        kategori: "makanan_ringan",
+        image: "images/makanan_ringan/dimsum_ayam.png",
+        deskripsi: "Dimsum kukus homemade dengan isian daging ayam. Free chili oil dan mayones"
     },
     {
-        id: "m6",
+        id: "m11",
+        nama: "Dimsum Udang (Isi 4)",
+        harga: "Rp 15.000",
+        kategori: "makanan_ringan",
+        image: "images/makanan_ringan/dimsum_udang.png",
+        deskripsi: "Dimsum kukus homemade dengan isian daging udang. Free chili oil dan mayones."
+    },
+    {
+        id: "m12",
         nama: "Dimsum Ayam Jamur (Isi 4)",
         harga: "Rp 15.000",
         kategori: "makanan_ringan",
-        image: "images/dimsum_jamur.jpeg",
-        deskripsi: "Dimsum kukus homemade dengan isian daging ayam padat berpadu gurihnya jamur."
+        image: "images/makanan_ringan/dimsum_jamur.jpeg",
+        deskripsi: "Dimsum kukus homemade dengan isian jamur. Free chili oil dan mayones."
     },
     {
-        id: "m7",
+        id: "m13",
+        nama: "Dimsum Mix (Isi 4)",
+        harga: "Rp 15.000",
+        kategori: "makanan_ringan",
+        image: "images/makanan_ringan/dimsum_mix.png",
+        deskripsi: "Dimsum kukus homemade bisa mix ayam, jamur dan udang. Free chili oil dan mayones."
+    },
+    {
+        id: "m14",
+        nama: "Dimsum Mix (Isi 4)",
+        harga: "Rp 15.000",
+        kategori: "makanan_ringan",
+        image: "images/makanan_ringan/dimsum_mix.png",
+        deskripsi: "Dimsum kukus homemade bisa mix ayam, jamur dan udang. Free chili oil dan mayones."
+    },
+    {
+        id: "m13",
+        nama: "Dimsum Mix (Isi 4)",
+        harga: "Rp 15.000",
+        kategori: "makanan_ringan",
+        image: "images/makanan_ringan/dimsum_mix.png",
+        deskripsi: "Dimsum kukus homemade bisa mix ayam, jamur dan udang. Free chili oil dan mayones."
+    },
+    {
+        id: "m13",
+        nama: "Dimsum Mix (Isi 4)",
+        harga: "Rp 15.000",
+        kategori: "makanan_ringan",
+        image: "images/makanan_ringan/dimsum_mix.png",
+        deskripsi: "Dimsum kukus homemade bisa mix ayam, jamur dan udang. Free chili oil dan mayones."
+    },
+    {
+        id: "m13",
+        nama: "Dimsum Mix (Isi 4)",
+        harga: "Rp 15.000",
+        kategori: "makanan_ringan",
+        image: "images/makanan_ringan/dimsum_mix.png",
+        deskripsi: "Dimsum kukus homemade bisa mix ayam, jamur dan udang. Free chili oil dan mayones."
+    },
+    {
+        id: "m11",
         nama: "Es Teh Manis",
         harga: "Rp 5.000",
         kategori: "minuman",
