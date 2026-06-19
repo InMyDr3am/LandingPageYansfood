@@ -106,36 +106,45 @@ const masterMenu = [
     },
     {
         id: "m14",
-        nama: "Dimsum Mix (Isi 4)",
+        nama: "Risol Mayo (isi 5pcs)",
         harga: "Rp 15.000",
         kategori: "makanan_ringan",
-        image: "images/makanan_ringan/dimsum_mix.png",
-        deskripsi: "Dimsum kukus homemade bisa mix ayam, jamur dan udang. Free chili oil dan mayones."
+        image: "images/makanan_ringan/risol_mayo.png",
+        deskripsi: "Risoles dengan isian mayo, daging ham dan sosis. Free saus, chili oil dan mayones."
     },
     {
-        id: "m13",
-        nama: "Dimsum Mix (Isi 4)",
+        id: "m15",
+        nama: "Risol Ayam (isi 5pcs)",
         harga: "Rp 15.000",
         kategori: "makanan_ringan",
-        image: "images/makanan_ringan/dimsum_mix.png",
-        deskripsi: "Dimsum kukus homemade bisa mix ayam, jamur dan udang. Free chili oil dan mayones."
+        image: "images/makanan_ringan/risol_ayam.png",
+        deskripsi: "Risoles dengan isian ayam dan sayur. Free saus, chili oil dan mayones."
     },
     {
-        id: "m13",
-        nama: "Dimsum Mix (Isi 4)",
-        harga: "Rp 15.000",
+        id: "m16",
+        nama: "Kentang Goreng",
+        harga: "Rp 10.000",
         kategori: "makanan_ringan",
-        image: "images/makanan_ringan/dimsum_mix.png",
-        deskripsi: "Dimsum kukus homemade bisa mix ayam, jamur dan udang. Free chili oil dan mayones."
+        image: "images/makanan_ringan/kentang.png",
+        deskripsi: "Kentang goreng yang dibuat dadakan isi 200 gram. Free saus, chili oil dan mayones."
     },
     {
-        id: "m13",
-        nama: "Dimsum Mix (Isi 4)",
-        harga: "Rp 15.000",
+        id: "m17",
+        nama: "Sosis Goreng",
+        harga: "Rp 10.000",
         kategori: "makanan_ringan",
-        image: "images/makanan_ringan/dimsum_mix.png",
-        deskripsi: "Dimsum kukus homemade bisa mix ayam, jamur dan udang. Free chili oil dan mayones."
+        image: "images/makanan_ringan/sosis.png",
+        deskripsi: "Sosis goreng yang dibuat dadakan isi 2 pcs. Free saus, chili oil dan mayones."
     },
+    {
+        id: "m18",
+        nama: "Kentang Sosis Goreng",
+        harga: "Rp 20.000",
+        kategori: "makanan_ringan",
+        image: "images/makanan_ringan/sosis_kentang.png",
+        deskripsi: "Kentang goreng dan sosis yang dibuat dadakan. Free saus, chili oil dan mayones."
+    },
+   
     {
         id: "m11",
         nama: "Es Teh Manis",
